@@ -4,7 +4,8 @@ import requests
 from datetime import datetime, timedelta
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})  # CORS設定を更新
+CORS(app)  # 全てのオリジンからのリクエストを許可
+# CORS(app, resources={r"/api/*": {"origins": "https://nextjs-flask-weather.onrender.com"}})  # CORS設定を更新
 
 
 @app.route('/')
