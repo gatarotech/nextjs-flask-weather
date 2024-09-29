@@ -30,7 +30,7 @@ export default function Home() {
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/api/areainfo/${id}`, {
+      const res = await fetch(`https://nextjs-flask-weather-backend.onrender.com/api/areainfo/${id}`, {
         method: 'GET',
       });
 
