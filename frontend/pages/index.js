@@ -51,8 +51,8 @@ export default function Home() {
 
   return (
     <div>
-      <h1>簡単！天気アプリ</h1>
-      <h2>地域を選んでください</h2>
+      <h1>今日の珍天気予報</h1>
+      <h3>地域を選んで送信</h3>
       <form onSubmit={handleIdRequest} style={{ display: 'flex', alignItems: 'center' }}>
         <select
           value={id}
@@ -126,9 +126,9 @@ export default function Home() {
           </div>
         </div>
       ) : id ? (
-        <p>天気データがありません。サーバーエラーが発生している可能性があります。</p>
+        <p>天気データがありません。</p>
       ) : (
-        <p>地域を選択して天気情報を取得してください。</p>
+        <p>地域を選択して送信ボタンを押してください。</p>
       )}
     </div>
   );
